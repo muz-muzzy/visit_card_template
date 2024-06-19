@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Мое портфолио</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> <!-- Ссылка на ваш файл стилей -->
+</head>
+<body>
+<h1>Иван Иванов</h1>
+
+<div class="container">
+
+    <div class="contacts">
+        <span>Email: example@example.com</span><br>
+        <span>Телефон: +7 999 999 99 99</span><br>
+        <a href="#">LinkedIn</a><br>
+        <a href="#">GitHub</a>
+    </div>
+    <div class="profile-info">
+        <p>
+            В 1995 году я нашел в своем доме старый компьютер. Это было как открытие нового мира. С тех пор я погрузился в мир программирования, изучая языки как BASIC, так и Pascal. Моя страсть к решению загадок привела меня к успеху в школе, где я стал одним из лучших студентов по информатике.
+
+            После школы я поступил в технический университет, где углубил свои знания в программировании и разработке ПО. Работая над различными проектами, я научился работать с Java и C++. После учебы я начал работу в крупной IT компании, где развивал несколько успешных продуктов.
+        </p>
+    </div>
+</div>
+
+<div class="projects">
+    <h2>Проекты</h2>
+    <div class="project-item">
+        <a href="https://github.com/username/project1"><h3>Название проекта 1</h3></a>
+        <p>Краткое описание проекта 1.</p>
+    </div>
+    <div class="project-item">
+        <a href="https://github.com/username/project2"><h3>Название проекта 2</h3></a>
+        <p>Краткое описание проекта 2.</p>
+    </div>
+    <!-- Добавьте больше проектов по аналогии -->
+</div>
+
+<form class="comment-form" action="/submit-comment" method="post">
+    <input type="text" placeholder="Ваш комментарий..." required>
+    <button type="submit">Отправить</button>
+</form>
+
+<div class="comments">
+    <h2>Комментарии</h2>
+    <div class="comment-item">
+        <p>Комментарий 1 от Имя Фамилия</p>
+    </div>
+    <div class="comment-item">
+        <p>Комментарий 2 от Другое имя Другая фамилия</p>
+    </div>
+    <!-- Добавьте больше комментариев по аналогии -->
+    <button class="load-more-comments">Загрузить ещё</button>
+</div>
+
+<script>
+    document.querySelector('.load-more-comments').addEventListener('click', function() {
+        // Здесь может быть ваша логика загрузки более старых комментариев
+    });
+</script>
+
+</body>
+</html>

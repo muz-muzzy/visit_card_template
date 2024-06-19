@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Общий стиль для контейнера */
+.container {
+    display: flex;
+    justify-content: space-evenly; /* Распределяет пространство между дочерними элементами */
+    align-items: stretch; /* Выравнивает дочерние элементы по вертикали */
+    height: auto; /* Высота автоматически подстраивается под содержимое */
+}
+
+.contacts {
+    background-color: #f9f9f9;
+    text-align: left;
+    display: block;
+    margin-bottom: 10px;
+    flex-shrink: 0; /* Предотвращает сужение блока */
+}
+
+.profile-info {
+    background-color: #f9f9f9;
+    text-align: right;
+    padding-left: 20px; /* Отступ справа для.profile-info */
+}
+
+.projects {
+    padding: 20px;
+}
+
+.project-item {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.comment-form input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.comment-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.comments {
+    padding: 20px;
+}
+
+.load-more-comments {
+    background-color: #ddd;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}

@@ -7,7 +7,7 @@ git clone https://github.com/muz-muzzy/visit_card_template.git
 ```
 - Переход в директорию проекта:
 ```bash
-cd visit_card_template
+cd visit_card_template/frontend
 ```
 - Установка зависимостей:
 ```bash

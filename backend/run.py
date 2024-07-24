@@ -10,4 +10,4 @@ class UserView(ModelView):
 with app.app_context():
     db.create_all()
     admin.add_view(UserView(User, db.session))
-    app.run(host="0.0.0.0", port=3000, debug=True)
+    app.run(host="0.0.0.0", port=8080, debug=True)

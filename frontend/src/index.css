@@ -10,7 +10,7 @@ body {
   background: black;
 }
 
-h1, h4, p, a {
+h1, h4, p, a, label, span{
   color: white;
   text-decoration: none;
 }
